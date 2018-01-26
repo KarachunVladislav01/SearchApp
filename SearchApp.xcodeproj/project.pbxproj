@@ -12,8 +12,8 @@
 		8676780F2014EC6C00D6C94F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8676780D2014EC6C00D6C94F /* Main.storyboard */; };
 		867678112014EC6C00D6C94F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867678102014EC6C00D6C94F /* Assets.xcassets */; };
 		867678142014EC6C00D6C94F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867678122014EC6C00D6C94F /* LaunchScreen.storyboard */; };
-		8676781F2014EC6C00D6C94F /* SearchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676781E2014EC6C00D6C94F /* SearchAppTests.swift */; };
-		8676782A2014EC6D00D6C94F /* SearchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867678292014EC6D00D6C94F /* SearchAppUITests.swift */; };
+		8676783B201560D600D6C94F /* ItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8676783A201560D600D6C94F /* ItemsModel.swift */; };
+		86A13D802019EA6600220060 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A13D7F2019EA6600220060 /* SearchResultTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +42,9 @@
 		867678132014EC6C00D6C94F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		867678152014EC6C00D6C94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8676781A2014EC6C00D6C94F /* SearchAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8676781E2014EC6C00D6C94F /* SearchAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAppTests.swift; sourceTree = "<group>"; };
-		867678202014EC6C00D6C94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		867678252014EC6D00D6C94F /* SearchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		867678292014EC6D00D6C94F /* SearchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAppUITests.swift; sourceTree = "<group>"; };
-		8676782B2014EC6D00D6C94F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8676783A201560D600D6C94F /* ItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsModel.swift; sourceTree = "<group>"; };
+		86A13D7F2019EA6600220060 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				867678082014EC6C00D6C94F /* SearchApp */,
-				8676781D2014EC6C00D6C94F /* SearchAppTests */,
-				867678282014EC6D00D6C94F /* SearchAppUITests */,
 				867678072014EC6C00D6C94F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,32 +93,16 @@
 		867678082014EC6C00D6C94F /* SearchApp */ = {
 			isa = PBXGroup;
 			children = (
+				86A13D7F2019EA6600220060 /* SearchResultTableViewCell.swift */,
 				867678092014EC6C00D6C94F /* AppDelegate.swift */,
 				8676780B2014EC6C00D6C94F /* ViewController.swift */,
+				8676783A201560D600D6C94F /* ItemsModel.swift */,
 				8676780D2014EC6C00D6C94F /* Main.storyboard */,
 				867678102014EC6C00D6C94F /* Assets.xcassets */,
 				867678122014EC6C00D6C94F /* LaunchScreen.storyboard */,
 				867678152014EC6C00D6C94F /* Info.plist */,
 			);
 			path = SearchApp;
-			sourceTree = "<group>";
-		};
-		8676781D2014EC6C00D6C94F /* SearchAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				8676781E2014EC6C00D6C94F /* SearchAppTests.swift */,
-				867678202014EC6C00D6C94F /* Info.plist */,
-			);
-			path = SearchAppTests;
-			sourceTree = "<group>";
-		};
-		867678282014EC6D00D6C94F /* SearchAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				867678292014EC6D00D6C94F /* SearchAppUITests.swift */,
-				8676782B2014EC6D00D6C94F /* Info.plist */,
-			);
-			path = SearchAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8676780C2014EC6C00D6C94F /* ViewController.swift in Sources */,
+				86A13D802019EA6600220060 /* SearchResultTableViewCell.swift in Sources */,
+				8676783B201560D600D6C94F /* ItemsModel.swift in Sources */,
 				8676780A2014EC6C00D6C94F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8676781F2014EC6C00D6C94F /* SearchAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +257,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8676782A2014EC6D00D6C94F /* SearchAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +467,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = SearchAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Vladislav.SearchAppUITests;
@@ -502,6 +483,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				INFOPLIST_FILE = SearchAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Vladislav.SearchAppUITests;

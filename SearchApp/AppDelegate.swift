@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SearchApp
 //
-//  Created by Vladislav on 1/21/18.
+//  Created by Vladislav on 1/22/18.
 //  Copyright © 2018 Vladislav. All rights reserved.
 //
 
